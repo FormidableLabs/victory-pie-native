@@ -1,0 +1,40 @@
+{
+  "name": "victory-pie-native",
+  "version": "0.1.0",
+  "description": "D3 pie & donut chart component for React Native",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FormidableLabs/victory-pie-native.git"
+  },
+  "keywords": [
+    "d3",
+    "pie",
+    "donut",
+    "chart",
+    "react",
+    "react-native"
+  ],
+  "author": "Vakhtang Sidamonidze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FormidableLabs/victory-pie-native/issues"
+  },
+  "homepage": "https://github.com/FormidableLabs/victory-pie-native#readme",
+  "scripts": {
+    "start": "./node_modules/react-native/packager/packager.sh start --reset-cache --projectRoots `pwd`,`pwd`/demo"
+  },
+  "dependencies": {
+    "react": "15.0.2",
+    "react-native-svg": "^2.1.0",
+    "victory-core-native": "git+ssh://git@github.com/vakhtang/victory-core-native.git",
+    "victory-pie": "git+https://github.com/vakhtang/victory-pie.git#native"
+  },
+  "devDependencies": {
+    "react-native": "^0.26.2"
+  }
+}
