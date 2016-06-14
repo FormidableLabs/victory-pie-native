@@ -40,7 +40,7 @@ class Demo extends Component {
     }, 2000);
   }
   generateRandomData() {
-    return _.range(1, 7).map(() => ({x: null, y: _.random(1, 10)}));
+    return _.range(1, 7).map(() => ({x: " ", y: _.random(1, 10)}));
   }
   render() {
     return (
