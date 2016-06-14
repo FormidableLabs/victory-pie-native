@@ -31,7 +31,7 @@
   "dependencies": {
     "react": "15.0.2",
     "react-native-svg": "^2.1.0",
-    "victory-core-native": "git+ssh://git@github.com/vakhtang/victory-core-native.git",
+    "victory-core-native": "git+https://github.com/FormidableLabs/victory-core-native.git",
     "victory-pie": "git+https://github.com/vakhtang/victory-pie.git#native"
   },
   "devDependencies": {
