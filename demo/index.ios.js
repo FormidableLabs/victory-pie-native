@@ -14,12 +14,6 @@ import {
 } from "react-native";
 import { VictoryPie } from "../lib";
 
-VictoryPie.defaultProps = {
-  ...VictoryPie.defaultProps,
-  height: 300,
-  width: 300
-};
-
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
@@ -94,6 +88,7 @@ class Demo extends Component {
           style={{
             labels: {
               fill: "white",
+              stroke: "none",
               fontSize: 10,
               fontWeight: "bold"
             }
@@ -121,7 +116,7 @@ class Demo extends Component {
         <VictoryPie
           style={{
             data: {
-              stroke: (data) => data.y > 75 ? "black" : "transparent",
+              stroke: (data) => data.y > 75 ? "black" : "none",
               opacity: (data) => data.y > 75 ? 1 : 0.4
             }
           }}
