@@ -1,6 +1,6 @@
 {
   "name": "victory-pie-native",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "D3 pie & donut chart component for React Native",
   "main": "lib/index.js",
   "files": [
@@ -31,7 +31,7 @@
   "dependencies": {
     "react": "^15.1.0",
     "react-native-svg": "^2.2.0",
-    "victory-core-native": "^0.1.0",
+    "victory-core-native": "^0.1.1",
     "victory-pie": "^4.2.0"
   },
   "devDependencies": {
