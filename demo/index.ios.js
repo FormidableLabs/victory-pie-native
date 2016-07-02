@@ -14,12 +14,6 @@ import {
 } from "react-native";
 import { VictoryPie } from "../lib";
 
-VictoryPie.defaultProps = {
-  ...VictoryPie.defaultProps,
-  height: 300,
-  width: 300
-};
-
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
@@ -50,19 +44,9 @@ class Demo extends Component {
           data={this.state.data}
           animate={{
             duration: 800,
-            data: this.state.data
           }}
         />
-        <VictoryPie
-          data={[
-            {animal: "Cat", pet: 45, wild: 17},
-            {animal: "Dog", pet: 85, wild: 6},
-            {animal: "Fish", pet: 55, wild: 0},
-            {animal: "Bird", pet: 15, wild: 40}
-          ]}
-          x="animal"
-          y={(data) => data.pet + data.wild}
-        />
+
         <VictoryPie
           style={{
             labels: {
@@ -94,6 +78,7 @@ class Demo extends Component {
           style={{
             labels: {
               fill: "white",
+              stroke: "none",
               fontSize: 10,
               fontWeight: "bold"
             }
@@ -121,7 +106,7 @@ class Demo extends Component {
         <VictoryPie
           style={{
             data: {
-              stroke: (data) => data.y > 75 ? "black" : "transparent",
+              stroke: (data) => data.y > 75 ? "black" : "none",
               opacity: (data) => data.y > 75 ? 1 : 0.4
             }
           }}
