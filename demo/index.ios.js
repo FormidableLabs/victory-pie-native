@@ -44,19 +44,9 @@ class Demo extends Component {
           data={this.state.data}
           animate={{
             duration: 800,
-            data: this.state.data
           }}
         />
-        <VictoryPie
-          data={[
-            {animal: "Cat", pet: 45, wild: 17},
-            {animal: "Dog", pet: 85, wild: 6},
-            {animal: "Fish", pet: 55, wild: 0},
-            {animal: "Bird", pet: 15, wild: 40}
-          ]}
-          x="animal"
-          y={(data) => data.pet + data.wild}
-        />
+
         <VictoryPie
           style={{
             labels: {
