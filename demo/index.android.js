@@ -4,7 +4,8 @@
  * https://github.com/facebook/react-native
  */
 
-import _ from "lodash";
+import random from "lodash.random";
+import range from "lodash.range";
 import React, { Component } from "react";
 import {
   AppRegistry,
@@ -39,7 +40,7 @@ class Demo extends Component {
     }, 2000);
   }
   generateRandomData() {
-    return _.range(1, 7).map(() => ({x: null, y: _.random(1, 10)}));
+    return range(1, 7).map(() => ({x: null, y: random(1, 10)}));
   }
   render() {
     return (

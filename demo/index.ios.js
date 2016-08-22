@@ -5,7 +5,8 @@
  * @flow
  */
 
-import _ from "lodash";
+import random from "lodash.random";
+import range from "lodash.range";
 import React, { Component } from "react";
 import {
   AppRegistry,
@@ -34,7 +35,7 @@ class Demo extends Component {
     }, 2000);
   }
   generateRandomData() {
-    return _.range(1, 7).map(() => ({x: " ", y: _.random(1, 10)}));
+    return range(1, 7).map(() => ({x: " ", y: random(1, 10)}));
   }
   render() {
     return (
