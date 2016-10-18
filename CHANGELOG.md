@@ -1,5 +1,9 @@
 # VictoryPieNative Changelog
 
+## 1.1.0 (2015-10-18)
+
+- Update dependencies
+
 ## 1.0.0 (2016-08-22)
 
 - **Moves `react-native-svg` to `peerDependencies`**
