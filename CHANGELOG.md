@@ -1,5 +1,10 @@
 # VictoryPieNative Changelog
 
+## 2.0.0 (2016-12-14)
+
+- Improved animation
+- Moves react and react-native to peerDependencies
+
 ## 1.1.0 (2015-10-18)
 
 - Update dependencies
@@ -20,7 +25,7 @@
 ## 0.1.3 (2016-07-02)
 
 - Initial working version
-- Known issues: 
+- Known issues:
   - Transitions are not working perfectly
   - Events are not supported
   - Poor Android support
