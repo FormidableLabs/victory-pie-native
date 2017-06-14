@@ -1,6 +1,10 @@
 # VictoryPieNative Changelog
 
-## 1.1.0 (2015-10-18)
+## 1.1.1 (2017-06-14)
+
+- Stricter dependency on victory-pie, ~7.1.2; eliminate multiple victory-core's being installed
+
+## 1.1.0 (2016-10-18)
 
 - Update dependencies
 
@@ -20,7 +24,7 @@
 ## 0.1.3 (2016-07-02)
 
 - Initial working version
-- Known issues: 
+- Known issues:
   - Transitions are not working perfectly
   - Events are not supported
   - Poor Android support
