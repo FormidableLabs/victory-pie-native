@@ -57,6 +57,6 @@
   "dependencies": {
     "react": "^15.3.0",
     "victory-core-native": "^3.0.0",
-    "victory-pie": "^7.0.0"
+    "victory-pie": "~7.1.2"
   }
 }
